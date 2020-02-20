@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Главная</title>
+</head>
+<body>
+    <div class="page-main">
+        <header>
+            <div class="header">     
+                <h1>Hello Napoleon It :)</h1>                       
+            </div>           
+        </header>
+        <div class="block-info">
+            <div class="block-img">
+                <img src="img/priroda-dolina-gornaya_derevnya-nagore-1920x1080.jpg" alt="">
+            </div>
+            <div class="block-text">
+                <h2 class="block-text-title">Мироненко Алексей</h2>               
+                <h3>Интересы</h3>                   
+                <ol class="rounded">
+                    <li><p>Программиорвание</p></li>
+                    <li><p>Активный отдых</p></li>
+                    <li><p>Люблю готовить </p></li>
+                    <li><p>Дрифт</p></li>
+                </ol>
+                <h3>Обо мне</h3>
+                <p class="block-text-name">Начинающий веб разработчик, интересуюсь JavaScript, Angular , RxJs, TypeScript, функциональное программирование, вообще очень люблю все что связано с разработкой, и новинками в ней.</p>
+                <h3>Контакты</h3>
+                    <p><a href="mailto:diversantlux@gmail.com">Тут можно написать мне на емейл</a></p> 
+                    <button class="btn" href="#">Показать телефон</button>
+                    <div class="content_block">
+	                    <p>Какой то номер телефона :)</p>
+                    </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <h2>Челябинск 2020</h2>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src=" https://code.jquery.com/jquery-3.4.1.min.js "></script>
+
+<script>
+
+$(document).ready(function(){
+
+	$('.btn').click(function(){
+
+		$('.content_block').slideToggle(300);      
+
+		return false;
+
+	});
+});
+</script>
+</body>
+</html>

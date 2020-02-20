@@ -1,0 +1,148 @@
+a {
+    text-decoration: none;
+}
+h2, h3 {
+    color: #7d7d7d;
+}
+
+.page-main {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.block-info {
+    max-width: 1200px;
+    height: 550px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 25px;
+    }
+
+.block-img {
+    background:#9fddf4;
+    height: 300px;
+    display: block;
+    width: 300px;
+}
+img {
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+}
+.block-text {
+    height: 550px;
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+}
+.block-text-title {
+    border-bottom: 1px solid#eee;
+    padding-bottom: 5px;
+}
+.rounded {
+    counter-reset: li; 
+    list-style: none; 
+    font: 14px "Trebuchet MS", "Lucida Sans";
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    padding-left: 14px;
+    }
+    .rounded p {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #DAD2CA;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: .3s ease-out;
+    }
+    .rounded p:hover {background: #E9E4E0;}
+    .rounded p:hover:before {transform: rotate(360deg);}
+    .rounded p:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #8FD4C1;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+    }
+
+    a {
+        display: inline-block;
+        position: relative;
+        color: #333333;
+        text-decoration: none;
+        padding: 0.2em 0.05em;
+        border-bottom: 2px solid #333333;
+      }
+      
+      a:hover {
+        color: #efefef;
+      }
+      
+      a:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #333333;
+        z-index: -1;
+        transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
+      }
+      
+      a:hover:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #333333;
+        z-index: -1;
+      }  
+ .btn {
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 3px;
+        background: #58ac94;
+        box-shadow: 0 -3px rgb(53,167,110) inset;
+        transition: 0.2s;
+      } 
+      .btn:hover { background: rgb(53, 167, 110); }
+      .btn:active {
+        background: rgb(33,147,90);
+        box-shadow: 0 3px rgb(33,147,90) inset;
+      
+ }     
+ .content_block {
+     display: none;
+ }     
+
+.header, footer {
+    background-color: #eee;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+}   
